@@ -2,8 +2,10 @@
 
 ## Init new reposit
 
+>get init
 
-'''
-get init
 
-'''
+## Add reposit
+
+
+> git add <имя файла>
