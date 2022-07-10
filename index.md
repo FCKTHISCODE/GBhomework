@@ -20,3 +20,7 @@ This command commits any files you’ve added with the git add command and also 
 ## Differences 
 This command shows the file differences which are not yet staged.
 >git diff
+
+## Git status
+This command lists all the files that have to be committed.
+>git status
