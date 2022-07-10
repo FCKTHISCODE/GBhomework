@@ -24,3 +24,7 @@ This command shows the file differences which are not yet staged.
 ## Git status
 This command lists all the files that have to be committed.
 >git status
+
+## Log
+This command is used to list the version history for the current branch.
+>git log
