@@ -14,8 +14,17 @@ This command adds one or more to the staging area.
 
 ## Commit
 
-This command commits any files you’ve added with the git add command and also commits any files you’ve changed since then.
-> git commit -a
+If you need to make any further adjustments, do so now, and then add any newly modified content to the index. Finally, commit your changes with:
+
+>git commit
+
+This will again prompt you for a message describing the change, and then record a new version of the project.
+
+Alternatively, instead of running git add beforehand, you can use
+
+>git commit -a
+
+which will automatically notice any modified (but not new) files, add them to the index, and commit, all in one step.
 
 ## Differences 
 This command shows the file differences which are not yet staged.
