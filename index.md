@@ -28,3 +28,14 @@ This command lists all the files that have to be committed.
 ## Log
 This command is used to list the version history for the current branch.
 >git log
+
+## Understanding history: History diagrams
+We will sometimes represent Git history using diagrams like the one below. Commits are shown as "o", and the links between them with lines drawn with - / and \. Time goes left to right:
+
+         o--o--o <-- Branch A
+        /
+ o--o--o <-- master
+        \
+         o--o--o <-- Branch B
+
+If we need to talk about a particular commit, the character "o" may be replaced with another letter or number.
