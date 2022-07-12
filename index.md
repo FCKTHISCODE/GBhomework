@@ -1,7 +1,10 @@
-# Git Commands Tutorial**
+# **Introduction** 
+## Why a Version Control System like Git is needed
+Real life projects generally have multiple developers working in parallel. So a version control system like Git is needed to ensure there are no code conflicts between the developers.
+Additionally, the requirements in such projects change often. So a version control system allows developers to revert and go back to an older version of the code.
+Finally, sometimes several projects which are being run in parallel involve the same codebase. In such a case, the concept of branching in Git is very important.
 
-###### Control System: This basically means that Git is a content tracker. So Git can be used to store content — it is mostly used to store code due to the other features it provides.
-
+# Git Commands Tutorial
 
 ## Start new repository
 
@@ -16,7 +19,6 @@ This command adds one or more to the staging area.
 > git add [file name]
 
 ## Commit
-
 
 If you need to make any further adjustments, do so now, and then add any newly modified content to the index. Finally, commit your changes with:
 
