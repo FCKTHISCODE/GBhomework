@@ -25,6 +25,17 @@ This command shows the file differences which are not yet staged.
 This command lists all the files that have to be committed.
 >git status
 
-## Log
-This command is used to list the version history for the current branch.
+## Viewing project history
+
+At any point you can view the history of your changes using
+
 >git log
+
+If you also want to see complete diffs at each step, use
+
+>git log -p
+
+Often the overview of the change is useful to get a feel of each step
+
+>git log --stat --summary
+
