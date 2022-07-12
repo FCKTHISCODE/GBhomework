@@ -1,4 +1,4 @@
-# **Git Tutorial**
+# Git Commands Tutorial**
 
 ###### Git is a DevOps tool used for source code management. It is a free and open-source version control system used to handle small to very large projects efficiently. Git is used to tracking changes in the source code, enabling multiple developers to work together on non-linear development.
 
@@ -8,7 +8,7 @@ This command is used to start a new repository.
 
 > git init
 
-## Add repository
+## Adding repository
 
 This command adds one or more to the staging area.
 
@@ -16,12 +16,12 @@ This command adds one or more to the staging area.
 
 ## Commit
 
+
 If you need to make any further adjustments, do so now, and then add any newly modified content to the index. Finally, commit your changes with:
 
 >git commit
 
 This will again prompt you for a message describing the change, and then record a new version of the project.
-
 Alternatively, instead of running git add beforehand, you can use
 
 >git commit -a
@@ -30,10 +30,12 @@ Which will automatically notice any modified (but not new) files, add them to th
 
 ## Differences 
 This command shows the file differences which are not yet staged.
+
 >git diff
 
 ## Git status
 This command lists all the files that have to be committed.
+
 >git status
 
 ## Viewing project history
@@ -50,3 +52,17 @@ Often the overview of the change is useful to get a feel of each step
 
 >git log --stat --summary
 
+## Understanding history: History diagrams
+We will sometimes represent Git history using diagrams like the one below. Commits are shown as "o", and the links between them with lines drawn with - / and \. Time goes left to right:
+
+         o--o--o <-- Branch A
+        /
+ o--o--o <-- master
+        \
+         o--o--o <-- Branch B
+
+If we need to talk about a particular commit, the character "o" may be replaced with another letter or number.
+
+## Understanding history: What is a branch?
+
+When we need to be precise, we will use the word "branch" to mean a line of development, and "branch head" (or just "head") to mean a reference to the most recent commit on a branch. In the example above, the branch head named "A" is a pointer to one particular commit, but we refer to the line of three commits leading up to that point as all being part of "branch A".
