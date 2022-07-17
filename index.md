@@ -69,3 +69,12 @@ If we need to talk about a particular commit, the character "o" may be replaced 
 ## Understanding history: What is a branch?
 
 When we need to be precise, we will use the word "branch" to mean a line of development, and "branch head" (or just "head") to mean a reference to the most recent commit on a branch. In the example above, the branch head named "A" is a pointer to one particular commit, but we refer to the line of three commits leading up to that point as all being part of "branch A".
+
+###Github
+At a high level, GitHub is a website and cloud-based service that helps developers store and manage their code, as well as track and control changes to their code.
+
+## Git-clone 
+Clone a repository into a new directory.
+Type git clone, and then paste the URL you copied earlier.
+
+> git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY
