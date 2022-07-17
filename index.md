@@ -69,3 +69,18 @@ If we need to talk about a particular commit, the character "o" may be replaced 
 ## Understanding history: What is a branch?
 
 When we need to be precise, we will use the word "branch" to mean a line of development, and "branch head" (or just "head") to mean a reference to the most recent commit on a branch. In the example above, the branch head named "A" is a pointer to one particular commit, but we refer to the line of three commits leading up to that point as all being part of "branch A".
+
+## Git push
+
+Create Changes
+To create new changes for review, simply push to the project’s magical refs/for/'branch' ref using any Git client tool:
+
+>git push ssh://sshusername@hostname:29418/projectname HEAD:refs/for/branch
+
+E.g. john.doe can use git push to upload new changes for the experimental branch of project kernel/common, hosted at the git.example.com Gerrit server:
+
+>git push ssh://john.doe@git.example.com:29418/kernel/common HEAD:refs/for/experimental
+
+Each new commit uploaded by the git push client will be converted into a change record on the server. The remote ref refs/for/experimental is not actually created by Gerrit, even though the client’s status messages may say otherwise.
+
+Other users (e.g. project owners) who have configured Gerrit to notify them of new changes will be automatically sent an email message when the push is completed.
